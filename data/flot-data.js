@@ -30,7 +30,7 @@ $(document).ready(function() {
             },
             tooltip: true,
             tooltipOpts: {
-                content: "'%s' of %x.1 is %y.4",
+                content: "'%s' de %x.1 é %y.4",
                 shifts: {
                     x: -60,
                     y: 25
@@ -53,16 +53,16 @@ $(document).ready(function() {
 $(function() {
 
     var data = [{
-        label: "Series 0",
+        label: "Série 0",
         data: 1
     }, {
-        label: "Series 1",
+        label: "Série 1",
         data: 3
     }, {
-        label: "Series 2",
+        label: "Série 2",
         data: 9
     }, {
-        label: "Series 3",
+        label: "Série 3",
         data: 20
     }];
 
@@ -1056,10 +1056,10 @@ $(function() {
     function doPlot(position) {
         $.plot($("#flot-line-chart-multi"), [{
             data: oilprices,
-            label: "Oil price ($)"
+            label: "Preço do óleo ($)"
         }, {
             data: exchangerates,
-            label: "USD/EUR exchange rate",
+            label: "Taxa de câmbio Dólar/Euro",
             yaxis: 2
         }], {
             xaxes: [{
@@ -1081,7 +1081,7 @@ $(function() {
             },
             tooltip: true,
             tooltipOpts: {
-                content: "%s for %x was %y",
+                content: "%s em %x foi de %y",
                 xDateFormat: "%y-%0m-%0d",
 
                 onHover: function(flotItem, $tooltipEl) {
